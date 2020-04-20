@@ -33,7 +33,7 @@
 		8B2A7EB52235478300E08E94 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		8B2A7EBB22356E1100E08E94 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
 		8B699635223E00D8006B3269 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		8B79826721B28621000E5A66 /* Portrait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portrait.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B79826721B28621000E5A66 /* PortraitCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PortraitCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B79826A21B28621000E5A66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B79826C21B28621000E5A66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8B79826F21B28621000E5A66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ViewController.storyboard; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 		8B79825E21B28621000E5A66 = {
 			isa = PBXGroup;
 			children = (
-				8B79826921B28621000E5A66 /* Portrait */,
+				8B79826921B28621000E5A66 /* PortraitCamera */,
 				8B79826821B28621000E5A66 /* Products */,
 				B462403D3D5B13EDE12DFB19 /* Pods */,
 				14E68B82865743C2DED744CB /* Frameworks */,
@@ -129,12 +129,12 @@
 		8B79826821B28621000E5A66 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8B79826721B28621000E5A66 /* Portrait.app */,
+				8B79826721B28621000E5A66 /* PortraitCamera.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8B79826921B28621000E5A66 /* Portrait */ = {
+		8B79826921B28621000E5A66 /* PortraitCamera */ = {
 			isa = PBXGroup;
 			children = (
 				8B79826A21B28621000E5A66 /* AppDelegate.swift */,
@@ -150,7 +150,7 @@
 				8B2A7E9522351FFD00E08E94 /* Support */,
 				8B79827621B28623000E5A66 /* LaunchScreen.storyboard */,
 			);
-			path = Portrait;
+			path = PortraitCamera;
 			sourceTree = "<group>";
 		};
 		B462403D3D5B13EDE12DFB19 /* Pods */ = {
@@ -165,9 +165,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8B79826621B28621000E5A66 /* Portrait */ = {
+		8B79826621B28621000E5A66 /* PortraitCamera */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8B79827C21B28623000E5A66 /* Build configuration list for PBXNativeTarget "Portrait" */;
+			buildConfigurationList = 8B79827C21B28623000E5A66 /* Build configuration list for PBXNativeTarget "PortraitCamera" */;
 			buildPhases = (
 				38580B54FDDB51C27EB6AC71 /* [CP] Check Pods Manifest.lock */,
 				8B79826321B28621000E5A66 /* Sources */,
@@ -179,9 +179,9 @@
 			);
 			dependencies = (
 			);
-			name = Portrait;
+			name = PortraitCamera;
 			productName = GrabCut;
-			productReference = 8B79826721B28621000E5A66 /* Portrait.app */;
+			productReference = 8B79826721B28621000E5A66 /* PortraitCamera.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -200,7 +200,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8B79826221B28621000E5A66 /* Build configuration list for PBXProject "Portrait" */;
+			buildConfigurationList = 8B79826221B28621000E5A66 /* Build configuration list for PBXProject "PortraitCamera" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -213,7 +213,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8B79826621B28621000E5A66 /* Portrait */,
+				8B79826621B28621000E5A66 /* PortraitCamera */,
 			);
 		};
 /* End PBXProject section */
@@ -441,10 +441,10 @@
 				DEVELOPMENT_TEAM = FX786M9G7F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Portrait",
+					"$(PROJECT_DIR)/PortraitCamera",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = Portrait/Support/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PortraitCamera/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,7 +452,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = koooootake.Portrait;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Portrait/Support/Portrait-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "PortraitCamera/Support/Portrait-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -469,10 +469,10 @@
 				DEVELOPMENT_TEAM = FX786M9G7F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Portrait",
+					"$(PROJECT_DIR)/PortraitCamera",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = Portrait/Support/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PortraitCamera/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -480,7 +480,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = koooootake.Portrait;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Portrait/Support/Portrait-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "PortraitCamera/Support/Portrait-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -489,7 +489,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8B79826221B28621000E5A66 /* Build configuration list for PBXProject "Portrait" */ = {
+		8B79826221B28621000E5A66 /* Build configuration list for PBXProject "PortraitCamera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B79827A21B28623000E5A66 /* Debug */,
@@ -498,7 +498,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8B79827C21B28623000E5A66 /* Build configuration list for PBXNativeTarget "Portrait" */ = {
+		8B79827C21B28623000E5A66 /* Build configuration list for PBXNativeTarget "PortraitCamera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8B79827D21B28623000E5A66 /* Debug */,

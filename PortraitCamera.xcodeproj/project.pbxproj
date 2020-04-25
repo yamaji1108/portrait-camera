@@ -24,6 +24,8 @@
 		8BA7F18E22266B9D002D38F7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7F18D22266B9D002D38F7 /* UIView+Extension.swift */; };
 		8BA7F19022267212002D38F7 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7F18F22267212002D38F7 /* UIImage+Extension.swift */; };
 		8BC747E221B3DCE700484349 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC747E121B3DCE700484349 /* DrawView.swift */; };
+		909892F22451C28400F206CD /* 白背景.png in Resources */ = {isa = PBXBuildFile; fileRef = 909892F12451C28400F206CD /* 白背景.png */; };
+		909892F424544F9700F206CD /* キャット.png in Resources */ = {isa = PBXBuildFile; fileRef = 909892F324544F9700F206CD /* キャット.png */; };
 		90DC52F5244ACD380060D6F1 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DC52F4244ACD380060D6F1 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		8BA7F18F22267212002D38F7 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		8BC747DF21B2F48D00484349 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		8BC747E121B3DCE700484349 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		909892F12451C28400F206CD /* 白背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "白背景.png"; sourceTree = "<group>"; };
+		909892F324544F9700F206CD /* キャット.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "キャット.png"; sourceTree = "<group>"; };
 		90DC52F4244ACD380060D6F1 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		DF00256CFB728A300A6DC326 /* Pods-Portrait.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portrait.release.xcconfig"; path = "Pods/Target Support Files/Pods-Portrait/Pods-Portrait.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +114,8 @@
 		8B2A7EB722356B4800E08E94 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				909892F12451C28400F206CD /* 白背景.png */,
+				909892F324544F9700F206CD /* キャット.png */,
 				8B2A7EBB22356E1100E08E94 /* sample.png */,
 				8B79827421B28623000E5A66 /* Assets.xcassets */,
 			);
@@ -225,6 +231,8 @@
 			files = (
 				8B79827821B28623000E5A66 /* LaunchScreen.storyboard in Resources */,
 				8B79827521B28623000E5A66 /* Assets.xcassets in Resources */,
+				909892F424544F9700F206CD /* キャット.png in Resources */,
+				909892F22451C28400F206CD /* 白背景.png in Resources */,
 				8B79827021B28621000E5A66 /* ViewController.storyboard in Resources */,
 				8B2A7EBC22356E1100E08E94 /* sample.png in Resources */,
 			);
@@ -438,6 +446,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				COMPRESS_PNG_FILES = NO;
 				DEVELOPMENT_TEAM = FX786M9G7F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +461,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = koooootake.Portrait;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_PNG_TEXT = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "PortraitCamera/Support/Portrait-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
@@ -466,6 +476,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				COMPRESS_PNG_FILES = NO;
 				DEVELOPMENT_TEAM = FX786M9G7F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -480,6 +491,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = koooootake.Portrait;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_PNG_TEXT = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "PortraitCamera/Support/Portrait-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

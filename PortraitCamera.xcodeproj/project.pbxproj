@@ -24,9 +24,13 @@
 		8BA7F18E22266B9D002D38F7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7F18D22266B9D002D38F7 /* UIView+Extension.swift */; };
 		8BA7F19022267212002D38F7 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7F18F22267212002D38F7 /* UIImage+Extension.swift */; };
 		8BC747E221B3DCE700484349 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC747E121B3DCE700484349 /* DrawView.swift */; };
+		90196CBA24667CAF00156D1B /* panda_alpha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90196CB924667CAF00156D1B /* panda_alpha.jpg */; };
+		90196CBC246680FE00156D1B /* shinchan.png in Resources */ = {isa = PBXBuildFile; fileRef = 90196CBB246680FE00156D1B /* shinchan.png */; };
+		90196CBE246688C000156D1B /* shinchan_alpha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90196CBD246688C000156D1B /* shinchan_alpha.jpg */; };
 		909892F22451C28400F206CD /* 白背景.png in Resources */ = {isa = PBXBuildFile; fileRef = 909892F12451C28400F206CD /* 白背景.png */; };
 		909892F424544F9700F206CD /* キャット.png in Resources */ = {isa = PBXBuildFile; fileRef = 909892F324544F9700F206CD /* キャット.png */; };
 		90DC52F5244ACD380060D6F1 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DC52F4244ACD380060D6F1 /* opencv2.framework */; };
+		90E3A53424655363003B8D96 /* UIView+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E3A53324655363003B8D96 /* UIView+EX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,9 +56,13 @@
 		8BA7F18F22267212002D38F7 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		8BC747DF21B2F48D00484349 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		8BC747E121B3DCE700484349 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		90196CB924667CAF00156D1B /* panda_alpha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = panda_alpha.jpg; sourceTree = "<group>"; };
+		90196CBB246680FE00156D1B /* shinchan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shinchan.png; sourceTree = "<group>"; };
+		90196CBD246688C000156D1B /* shinchan_alpha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shinchan_alpha.jpg; sourceTree = "<group>"; };
 		909892F12451C28400F206CD /* 白背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "白背景.png"; sourceTree = "<group>"; };
 		909892F324544F9700F206CD /* キャット.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "キャット.png"; sourceTree = "<group>"; };
 		90DC52F4244ACD380060D6F1 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		90E3A53324655363003B8D96 /* UIView+EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+EX.swift"; sourceTree = "<group>"; };
 		DF00256CFB728A300A6DC326 /* Pods-Portrait.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portrait.release.xcconfig"; path = "Pods/Target Support Files/Pods-Portrait/Pods-Portrait.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +123,9 @@
 			isa = PBXGroup;
 			children = (
 				909892F12451C28400F206CD /* 白背景.png */,
+				90196CBB246680FE00156D1B /* shinchan.png */,
+				90196CBD246688C000156D1B /* shinchan_alpha.jpg */,
+				90196CB924667CAF00156D1B /* panda_alpha.jpg */,
 				909892F324544F9700F206CD /* キャット.png */,
 				8B2A7EBB22356E1100E08E94 /* sample.png */,
 				8B79827421B28623000E5A66 /* Assets.xcassets */,
@@ -146,6 +157,7 @@
 				8B79826A21B28621000E5A66 /* AppDelegate.swift */,
 				8B79826E21B28621000E5A66 /* ViewController.storyboard */,
 				8B79826C21B28621000E5A66 /* ViewController.swift */,
+				90E3A53324655363003B8D96 /* UIView+EX.swift */,
 				8B2A7EB52235478300E08E94 /* ViewModel.swift */,
 				8BC747E121B3DCE700484349 /* DrawView.swift */,
 				8B2A7E9222342A5000E08E94 /* GradientAdjustPointView.swift */,
@@ -229,8 +241,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90196CBE246688C000156D1B /* shinchan_alpha.jpg in Resources */,
+				90196CBA24667CAF00156D1B /* panda_alpha.jpg in Resources */,
 				8B79827821B28623000E5A66 /* LaunchScreen.storyboard in Resources */,
 				8B79827521B28623000E5A66 /* Assets.xcassets in Resources */,
+				90196CBC246680FE00156D1B /* shinchan.png in Resources */,
 				909892F424544F9700F206CD /* キャット.png in Resources */,
 				909892F22451C28400F206CD /* 白背景.png in Resources */,
 				8B79827021B28621000E5A66 /* ViewController.storyboard in Resources */,
@@ -290,6 +305,7 @@
 				8B2A7EB62235478300E08E94 /* ViewModel.swift in Sources */,
 				8B7A63E421BBCF6B00124733 /* UIAlertController+Extension.swift in Sources */,
 				8B79828E21B28C53000E5A66 /* OpenCVManager.mm in Sources */,
+				90E3A53424655363003B8D96 /* UIView+EX.swift in Sources */,
 				8BA7F18E22266B9D002D38F7 /* UIView+Extension.swift in Sources */,
 				8B2A7E9322342A5000E08E94 /* GradientAdjustPointView.swift in Sources */,
 				8BA7F19022267212002D38F7 /* UIImage+Extension.swift in Sources */,

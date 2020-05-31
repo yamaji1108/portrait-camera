@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35AA6D3BD4B67DCA2A7537EE /* Pods_Portrait.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3316E43DC8BDD0F8E57FE107 /* Pods_Portrait.framework */; };
+		5BA772F92EF0F93516E742F0 /* Pods_PortraitCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA28847F0CE6C849BBC361C /* Pods_PortraitCamera.framework */; };
 		8B2A7E9322342A5000E08E94 /* GradientAdjustPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2A7E9222342A5000E08E94 /* GradientAdjustPointView.swift */; };
 		8B2A7EB62235478300E08E94 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2A7EB52235478300E08E94 /* ViewModel.swift */; };
 		8B2A7EBA22356BC800E08E94 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BC747DF21B2F48D00484349 /* opencv2.framework */; };
@@ -24,17 +24,15 @@
 		8BA7F18E22266B9D002D38F7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7F18D22266B9D002D38F7 /* UIView+Extension.swift */; };
 		8BA7F19022267212002D38F7 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7F18F22267212002D38F7 /* UIImage+Extension.swift */; };
 		8BC747E221B3DCE700484349 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC747E121B3DCE700484349 /* DrawView.swift */; };
-		90196CBA24667CAF00156D1B /* panda_alpha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90196CB924667CAF00156D1B /* panda_alpha.jpg */; };
-		90196CBC246680FE00156D1B /* shinchan.png in Resources */ = {isa = PBXBuildFile; fileRef = 90196CBB246680FE00156D1B /* shinchan.png */; };
-		90196CBE246688C000156D1B /* shinchan_alpha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 90196CBD246688C000156D1B /* shinchan_alpha.jpg */; };
+		90196CC02468201500156D1B /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 90196CBF2468201500156D1B /* title.png */; };
+		90624F9E247E18C300BFD1BC /* ELCImagePickerController in Resources */ = {isa = PBXBuildFile; fileRef = 90624F9D247E18C300BFD1BC /* ELCImagePickerController */; };
 		909892F22451C28400F206CD /* 白背景.png in Resources */ = {isa = PBXBuildFile; fileRef = 909892F12451C28400F206CD /* 白背景.png */; };
-		909892F424544F9700F206CD /* キャット.png in Resources */ = {isa = PBXBuildFile; fileRef = 909892F324544F9700F206CD /* キャット.png */; };
 		90DC52F5244ACD380060D6F1 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DC52F4244ACD380060D6F1 /* opencv2.framework */; };
 		90E3A53424655363003B8D96 /* UIView+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E3A53324655363003B8D96 /* UIView+EX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3316E43DC8BDD0F8E57FE107 /* Pods_Portrait.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Portrait.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		708EF0B3460E86E3FFC30CF5 /* Pods-PortraitCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PortraitCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-PortraitCamera/Pods-PortraitCamera.release.xcconfig"; sourceTree = "<group>"; };
 		8B2A7E9222342A5000E08E94 /* GradientAdjustPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientAdjustPointView.swift; sourceTree = "<group>"; };
 		8B2A7EB52235478300E08E94 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		8B2A7EBB22356E1100E08E94 /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
@@ -56,14 +54,14 @@
 		8BA7F18F22267212002D38F7 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		8BC747DF21B2F48D00484349 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		8BC747E121B3DCE700484349 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
-		90196CB924667CAF00156D1B /* panda_alpha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = panda_alpha.jpg; sourceTree = "<group>"; };
-		90196CBB246680FE00156D1B /* shinchan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shinchan.png; sourceTree = "<group>"; };
-		90196CBD246688C000156D1B /* shinchan_alpha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shinchan_alpha.jpg; sourceTree = "<group>"; };
+		90196CBF2468201500156D1B /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		90624F9D247E18C300BFD1BC /* ELCImagePickerController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ELCImagePickerController; sourceTree = "<group>"; };
 		909892F12451C28400F206CD /* 白背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "白背景.png"; sourceTree = "<group>"; };
-		909892F324544F9700F206CD /* キャット.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "キャット.png"; sourceTree = "<group>"; };
 		90DC52F4244ACD380060D6F1 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		90E3A53324655363003B8D96 /* UIView+EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+EX.swift"; sourceTree = "<group>"; };
+		CCA28847F0CE6C849BBC361C /* Pods_PortraitCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PortraitCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF00256CFB728A300A6DC326 /* Pods-Portrait.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Portrait.release.xcconfig"; path = "Pods/Target Support Files/Pods-Portrait/Pods-Portrait.release.xcconfig"; sourceTree = "<group>"; };
+		FE09CB571AF39DD6F6C9DE37 /* Pods-PortraitCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PortraitCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PortraitCamera/Pods-PortraitCamera.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +71,7 @@
 			files = (
 				90DC52F5244ACD380060D6F1 /* opencv2.framework in Frameworks */,
 				8B2A7EBA22356BC800E08E94 /* opencv2.framework in Frameworks */,
-				35AA6D3BD4B67DCA2A7537EE /* Pods_Portrait.framework in Frameworks */,
+				5BA772F92EF0F93516E742F0 /* Pods_PortraitCamera.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				8BC747DF21B2F48D00484349 /* opencv2.framework */,
-				3316E43DC8BDD0F8E57FE107 /* Pods_Portrait.framework */,
+				CCA28847F0CE6C849BBC361C /* Pods_PortraitCamera.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -122,11 +120,8 @@
 		8B2A7EB722356B4800E08E94 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				90196CBF2468201500156D1B /* title.png */,
 				909892F12451C28400F206CD /* 白背景.png */,
-				90196CBB246680FE00156D1B /* shinchan.png */,
-				90196CBD246688C000156D1B /* shinchan_alpha.jpg */,
-				90196CB924667CAF00156D1B /* panda_alpha.jpg */,
-				909892F324544F9700F206CD /* キャット.png */,
 				8B2A7EBB22356E1100E08E94 /* sample.png */,
 				8B79827421B28623000E5A66 /* Assets.xcassets */,
 			);
@@ -163,6 +158,7 @@
 				8B2A7E9222342A5000E08E94 /* GradientAdjustPointView.swift */,
 				90DC52F4244ACD380060D6F1 /* opencv2.framework */,
 				8B2A7E962235201E00E08E94 /* OpenCV */,
+				90624F9D247E18C300BFD1BC /* ELCImagePickerController */,
 				8B2A7E9422351F8100E08E94 /* Extention */,
 				8B2A7EB722356B4800E08E94 /* Resource */,
 				8B2A7E9522351FFD00E08E94 /* Support */,
@@ -176,6 +172,8 @@
 			children = (
 				8B89E664110F8A42685CB995 /* Pods-Portrait.debug.xcconfig */,
 				DF00256CFB728A300A6DC326 /* Pods-Portrait.release.xcconfig */,
+				FE09CB571AF39DD6F6C9DE37 /* Pods-PortraitCamera.debug.xcconfig */,
+				708EF0B3460E86E3FFC30CF5 /* Pods-PortraitCamera.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -241,14 +239,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90196CBE246688C000156D1B /* shinchan_alpha.jpg in Resources */,
-				90196CBA24667CAF00156D1B /* panda_alpha.jpg in Resources */,
 				8B79827821B28623000E5A66 /* LaunchScreen.storyboard in Resources */,
 				8B79827521B28623000E5A66 /* Assets.xcassets in Resources */,
-				90196CBC246680FE00156D1B /* shinchan.png in Resources */,
-				909892F424544F9700F206CD /* キャット.png in Resources */,
+				90196CC02468201500156D1B /* title.png in Resources */,
 				909892F22451C28400F206CD /* 白背景.png in Resources */,
 				8B79827021B28621000E5A66 /* ViewController.storyboard in Resources */,
+				90624F9E247E18C300BFD1BC /* ELCImagePickerController in Resources */,
 				8B2A7EBC22356E1100E08E94 /* sample.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +267,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Portrait-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-PortraitCamera-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -284,15 +280,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Portrait/Pods-Portrait-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-PortraitCamera/Pods-PortraitCamera-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Portrait/Pods-Portrait-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-PortraitCamera/Pods-PortraitCamera-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Portrait/Pods-Portrait-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PortraitCamera/Pods-PortraitCamera-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -457,13 +453,15 @@
 		};
 		8B79827D21B28623000E5A66 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B89E664110F8A42685CB995 /* Pods-Portrait.debug.xcconfig */;
+			baseConfigurationReference = FE09CB571AF39DD6F6C9DE37 /* Pods-PortraitCamera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMPRESS_PNG_FILES = NO;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = FX786M9G7F;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PortraitCamera",
@@ -475,7 +473,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = koooootake.Portrait;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mineo.yamaji1108.PortraitCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_PNG_TEXT = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "PortraitCamera/Support/Portrait-Bridging-Header.h";
@@ -487,13 +485,15 @@
 		};
 		8B79827E21B28623000E5A66 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF00256CFB728A300A6DC326 /* Pods-Portrait.release.xcconfig */;
+			baseConfigurationReference = 708EF0B3460E86E3FFC30CF5 /* Pods-PortraitCamera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMPRESS_PNG_FILES = NO;
+				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_TEAM = FX786M9G7F;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/PortraitCamera",
@@ -505,7 +505,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = koooootake.Portrait;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.mineo.yamaji1108.PortraitCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_PNG_TEXT = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "PortraitCamera/Support/Portrait-Bridging-Header.h";

@@ -1,16 +1,20 @@
 PODS:
   - CropViewController (2.5.2)
+  - ELCImagePickerController (0.2.0)
 
 DEPENDENCIES:
   - CropViewController
+  - ELCImagePickerController
 
 SPEC REPOS:
   trunk:
     - CropViewController
+    - ELCImagePickerController
 
 SPEC CHECKSUMS:
   CropViewController: 1aac40093c5739e60d992b04724a55d12a689a4c
+  ELCImagePickerController: b1b7084434a7d49f2cfc916bde1f3ba353d38de9
 
-PODFILE CHECKSUM: e13ba84fe02e3a116ee061f7eed9d05e77ee49ca
+PODFILE CHECKSUM: a76465bbed5e5fd8d85cae50528b8ab43666ce8a
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.2

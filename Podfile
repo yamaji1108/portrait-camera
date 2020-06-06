@@ -6,6 +6,7 @@ target 'PortraitCamera' do
   use_frameworks!
   pod 'CropViewController'
   pod 'ELCImagePickerController'
+  pod 'DKImagePickerController'
 
   # Pods for PortraitCamera
 

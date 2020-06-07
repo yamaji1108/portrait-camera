@@ -9,26 +9,29 @@ import Foundation
 import DKImagePickerController
 
 class CustomUIDelegate: DKImagePickerControllerBaseUIDelegate {
+    
     override func createDoneButtonIfNeeded() -> UIButton {
         let button = UIButton(type: UIButton.ButtonType.custom)
         button.setTitle("選択", for: .normal)
         button.setTitleColor(UINavigationBar.appearance().tintColor ?? self.imagePickerController.navigationBar.tintColor, for: .normal)
-        button.addTarget(self.imagePickerController, action: #selector(DKImagePickerController.done), for: .touchUpInside)
+        button.addTarget(self, action: #selector(selectDone), for: .touchUpInside)
         return button
     }
 
     @objc func selectDone() {
         if(imagePickerController.selectedAssetIdentifiers.count < 3){
-            let alert = UIAlertController.init(title: "注意", message: "3枚もしくは4枚を選択してください", preferredStyle: .alert)
+            let alert = UIAlertController.init(title: "エラー", message: "3枚もしくは4枚を選択してください", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
+            alert.addAction(okAction)
             imagePickerController.present(alert, animated: true, completion: nil)
         } else {
-            //DKImagePickerController.done
+            imagePickerController.done()
         }
     }
     
     //写真選択超過時のアラートのカスタマイズ
     override func imagePickerControllerDidReachMaxLimit(_ imagePickerController: DKImagePickerController) {
-        let alert = UIAlertController.init(title: "注意", message: "これ以上選択できません", preferredStyle: .alert)
+        let alert = UIAlertController.init(title: "上限枚数超過エラー", message: "これ以上選択できません", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
         alert.addAction(okAction)
         imagePickerController.present(alert, animated: true, completion: nil)

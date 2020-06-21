@@ -26,7 +26,7 @@
 		8BC747E221B3DCE700484349 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC747E121B3DCE700484349 /* DrawView.swift */; };
 		90196CC02468201500156D1B /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 90196CBF2468201500156D1B /* title.png */; };
 		90624F9E247E18C300BFD1BC /* ELCImagePickerController in Resources */ = {isa = PBXBuildFile; fileRef = 90624F9D247E18C300BFD1BC /* ELCImagePickerController */; };
-		909892F22451C28400F206CD /* 白背景.png in Resources */ = {isa = PBXBuildFile; fileRef = 909892F12451C28400F206CD /* 白背景.png */; };
+		90A0F3FE249265DD00D78EBC /* 白背景.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A0F3FD249265DD00D78EBC /* 白背景.png */; };
 		90DC52F5244ACD380060D6F1 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DC52F4244ACD380060D6F1 /* opencv2.framework */; };
 		90E3A53424655363003B8D96 /* UIView+EX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E3A53324655363003B8D96 /* UIView+EX.swift */; };
 		90E605C7248392FE00FDC408 /* CustomUIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E605C6248392FE00FDC408 /* CustomUIDelegate.swift */; };
@@ -57,7 +57,7 @@
 		8BC747E121B3DCE700484349 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		90196CBF2468201500156D1B /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		90624F9D247E18C300BFD1BC /* ELCImagePickerController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ELCImagePickerController; sourceTree = "<group>"; };
-		909892F12451C28400F206CD /* 白背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "白背景.png"; sourceTree = "<group>"; };
+		90A0F3FD249265DD00D78EBC /* 白背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "白背景.png"; path = "../../../画像ファイル/白背景.png"; sourceTree = "<group>"; };
 		90DC52F4244ACD380060D6F1 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		90E3A53324655363003B8D96 /* UIView+EX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+EX.swift"; sourceTree = "<group>"; };
 		90E605C6248392FE00FDC408 /* CustomUIDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIDelegate.swift; sourceTree = "<group>"; };
@@ -122,8 +122,8 @@
 		8B2A7EB722356B4800E08E94 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				90A0F3FD249265DD00D78EBC /* 白背景.png */,
 				90196CBF2468201500156D1B /* title.png */,
-				909892F12451C28400F206CD /* 白背景.png */,
 				8B2A7EBB22356E1100E08E94 /* sample.png */,
 				8B79827421B28623000E5A66 /* Assets.xcassets */,
 			);
@@ -243,9 +243,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B79827821B28623000E5A66 /* LaunchScreen.storyboard in Resources */,
+				90A0F3FE249265DD00D78EBC /* 白背景.png in Resources */,
 				8B79827521B28623000E5A66 /* Assets.xcassets in Resources */,
 				90196CC02468201500156D1B /* title.png in Resources */,
-				909892F22451C28400F206CD /* 白背景.png in Resources */,
 				8B79827021B28621000E5A66 /* ViewController.storyboard in Resources */,
 				90624F9E247E18C300BFD1BC /* ELCImagePickerController in Resources */,
 				8B2A7EBC22356E1100E08E94 /* sample.png in Resources */,
@@ -397,6 +397,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALID_ARCHS = arm64;
 			};
 			name = Debug;
 		};
@@ -434,7 +435,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -452,6 +453,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};
@@ -463,7 +465,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMPRESS_PNG_FILES = NO;
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1.5;
 				DEVELOPMENT_TEAM = FX786M9G7F;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -495,7 +497,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMPRESS_PNG_FILES = NO;
-				CURRENT_PROJECT_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1.5;
 				DEVELOPMENT_TEAM = FX786M9G7F;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (

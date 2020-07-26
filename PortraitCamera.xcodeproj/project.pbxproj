@@ -23,8 +23,10 @@
 		8B7A63E621BBCF8D00124733 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7A63E521BBCF8D00124733 /* Util.swift */; };
 		8BA7F18E22266B9D002D38F7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7F18D22266B9D002D38F7 /* UIView+Extension.swift */; };
 		8BA7F19022267212002D38F7 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7F18F22267212002D38F7 /* UIImage+Extension.swift */; };
-		8BC747E221B3DCE700484349 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC747E121B3DCE700484349 /* DrawView.swift */; };
 		90196CC02468201500156D1B /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 90196CBF2468201500156D1B /* title.png */; };
+		90428A4624BAEA4D001512D4 /* DeepLabV3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 90428A4524BAEA4D001512D4 /* DeepLabV3.mlmodel */; };
+		90428A4824C42F83001512D4 /* LogoSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90428A4724C42F83001512D4 /* LogoSelectViewController.swift */; };
+		90428A6C24CD666D001512D4 /* LogoStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90428A6B24CD666C001512D4 /* LogoStamp.swift */; };
 		90624F9E247E18C300BFD1BC /* ELCImagePickerController in Resources */ = {isa = PBXBuildFile; fileRef = 90624F9D247E18C300BFD1BC /* ELCImagePickerController */; };
 		90A0F3FE249265DD00D78EBC /* 白背景.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A0F3FD249265DD00D78EBC /* 白背景.png */; };
 		90DC52F5244ACD380060D6F1 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90DC52F4244ACD380060D6F1 /* opencv2.framework */; };
@@ -54,8 +56,10 @@
 		8BA7F18D22266B9D002D38F7 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		8BA7F18F22267212002D38F7 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		8BC747DF21B2F48D00484349 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
-		8BC747E121B3DCE700484349 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		90196CBF2468201500156D1B /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		90428A4524BAEA4D001512D4 /* DeepLabV3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DeepLabV3.mlmodel; sourceTree = "<group>"; };
+		90428A4724C42F83001512D4 /* LogoSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoSelectViewController.swift; sourceTree = "<group>"; };
+		90428A6B24CD666C001512D4 /* LogoStamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoStamp.swift; sourceTree = "<group>"; };
 		90624F9D247E18C300BFD1BC /* ELCImagePickerController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ELCImagePickerController; sourceTree = "<group>"; };
 		90A0F3FD249265DD00D78EBC /* 白背景.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "白背景.png"; path = "../../../画像ファイル/白背景.png"; sourceTree = "<group>"; };
 		90DC52F4244ACD380060D6F1 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
@@ -83,6 +87,7 @@
 		14E68B82865743C2DED744CB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				90428A4524BAEA4D001512D4 /* DeepLabV3.mlmodel */,
 				8BC747DF21B2F48D00484349 /* opencv2.framework */,
 				CCA28847F0CE6C849BBC361C /* Pods_PortraitCamera.framework */,
 			);
@@ -153,11 +158,12 @@
 			children = (
 				8B79826E21B28621000E5A66 /* ViewController.storyboard */,
 				8B79826C21B28621000E5A66 /* ViewController.swift */,
+				90428A4724C42F83001512D4 /* LogoSelectViewController.swift */,
+				90428A6B24CD666C001512D4 /* LogoStamp.swift */,
 				8B79826A21B28621000E5A66 /* AppDelegate.swift */,
 				90E605C6248392FE00FDC408 /* CustomUIDelegate.swift */,
 				90E3A53324655363003B8D96 /* UIView+EX.swift */,
 				8B2A7EB52235478300E08E94 /* ViewModel.swift */,
-				8BC747E121B3DCE700484349 /* DrawView.swift */,
 				8B2A7E9222342A5000E08E94 /* GradientAdjustPointView.swift */,
 				90DC52F4244ACD380060D6F1 /* opencv2.framework */,
 				8B2A7E962235201E00E08E94 /* OpenCV */,
@@ -308,12 +314,14 @@
 				8BA7F18E22266B9D002D38F7 /* UIView+Extension.swift in Sources */,
 				8B2A7E9322342A5000E08E94 /* GradientAdjustPointView.swift in Sources */,
 				8BA7F19022267212002D38F7 /* UIImage+Extension.swift in Sources */,
-				8BC747E221B3DCE700484349 /* DrawView.swift in Sources */,
+				90428A4624BAEA4D001512D4 /* DeepLabV3.mlmodel in Sources */,
+				90428A4824C42F83001512D4 /* LogoSelectViewController.swift in Sources */,
 				90E605C7248392FE00FDC408 /* CustomUIDelegate.swift in Sources */,
 				8B699636223E00D8006B3269 /* CustomButton.swift in Sources */,
 				8B79826D21B28621000E5A66 /* ViewController.swift in Sources */,
 				8B7A63E621BBCF8D00124733 /* Util.swift in Sources */,
 				8B79826B21B28621000E5A66 /* AppDelegate.swift in Sources */,
+				90428A6C24CD666D001512D4 /* LogoStamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

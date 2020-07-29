@@ -12,7 +12,7 @@ class LogoStamp: UIImageView {
 
     //ユーザーが画面にタッチした時に呼ばれるメソッド
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
-        //このクラスの親ビューをa最前面に設定
+        //このクラスの親ビューを最前面に設定
         self.superview?.bringSubviewToFront(self)
     }
     

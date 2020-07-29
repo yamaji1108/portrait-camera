@@ -58,7 +58,7 @@ class LogoSelectViewController: UIViewController ,UICollectionViewDataSource, UI
         stamp.image = imageArray[indexPath.row]
         //AppDelegateのインスタンスを取得
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        //配列stampArrayにstampを追加
+        //配列imageArrayにstampを追加
         appDelegate.stampArray.append(stamp)
         //新規スタンプ追加フラグをtrueに設定
         appDelegate.isNewStampAdded = true

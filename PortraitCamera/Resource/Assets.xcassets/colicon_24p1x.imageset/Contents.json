@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "collageicon_24p1x.png",
+      "filename" : "colicon_24p1x.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "collageicon_24px2.png",
+      "filename" : "colicon_24p2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "collageicon_24px3.png",
+      "filename" : "colicon_24p3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

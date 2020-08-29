@@ -38,7 +38,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var collageButton: UIBarButtonItem!
     @IBOutlet weak var cameraButton: UIBarButtonItem!
     @IBOutlet weak var imagePickerButton: UIBarButtonItem!
-    
+    @IBOutlet weak var logoAddButton: UIBarButtonItem!
+    @IBOutlet weak var logoDeleteButton: UIButton!
     
     //collage
     var imageArray:[UIImage] = []
@@ -76,6 +77,12 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
     @IBOutlet weak var brightnessValueSlider: UISlider!
     @IBOutlet weak var contrastValueSlider: UISlider!
     @IBOutlet weak var saturationValueSlider: UISlider!
+    @IBOutlet weak var canvasViewRightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var canvasViewLeftConstraint: NSLayoutConstraint!
+    @IBOutlet weak var canvasViewTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var canvasViewBottomConstraint: NSLayoutConstraint!
+    
+    
     
     //dof
     @IBOutlet weak var gradientView: UIView!
@@ -201,6 +208,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         resultImageView.isHidden = viewModel.isHiddenResultImageView
         gradientAdjustView.isHidden = viewModel.isHiddenGradientView
         gradientView.isHidden = viewModel.isHiddenGradientView
+        logoDeleteButton.isHidden = viewModel.isHiddenLogoDeleteButton
         navigationItem.title = viewModel.navigationTitle
         safeAreaView.backgroundColor = viewModel.viewBackgroundColor
         
@@ -211,7 +219,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         let editContentView: UIView
         switch status {
         case .load:
-            //バーボタン系を表示
+            //バーボタン系を表示（ロゴ追加ボタンは非表示）
             homeButton.isEnabled = true
             homeButton.tintColor = UIColor.init(red: 0/255, green: 151/255, blue: 219/255, alpha: 255/255)
             collageButton.isEnabled = true
@@ -220,6 +228,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
             cameraButton.tintColor = nil
             imagePickerButton.isEnabled = true
             imagePickerButton.tintColor = nil
+            logoAddButton.isEnabled = false
+            logoAddButton.tintColor = UIColor.clear
             return
         case .segment:
             editContentView = segmentEditView
@@ -232,6 +242,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
             cameraButton.tintColor = UIColor.clear
             imagePickerButton.isEnabled = false
             imagePickerButton.tintColor = UIColor.clear
+            logoAddButton.isEnabled = false
+            logoAddButton.tintColor = UIColor.clear
         case .collageFor3:
             editContentView = collageEditView
             //バーボタン系は非表示
@@ -243,6 +255,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
             cameraButton.tintColor = UIColor.clear
             imagePickerButton.isEnabled = false
             imagePickerButton.tintColor = UIColor.clear
+            logoAddButton.isEnabled = false
+            logoAddButton.tintColor = UIColor.clear
             //使用しないviewのタッチ操作を無効にする
             collageImageView1.isUserInteractionEnabled = false
             collageImageView2.isUserInteractionEnabled = false
@@ -257,11 +271,13 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
             cameraButton.tintColor = UIColor.clear
             imagePickerButton.isEnabled = false
             imagePickerButton.tintColor = UIColor.clear
+            logoAddButton.isEnabled = false
+            logoAddButton.tintColor = UIColor.clear
             //使用しないviewのタッチ操作を無効にする
             collageImageView5.isUserInteractionEnabled = false
         case .result:
             editContentView = resultEditView
-            //ホームボタンは表示
+            //ホームボタン、ロゴ追加ボタンは表示
             homeButton.isEnabled = true
             homeButton.tintColor = UIColor.init(red: 0/255, green: 151/255, blue: 219/255, alpha: 255/255)
             collageButton.isEnabled = false
@@ -270,6 +286,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
             cameraButton.tintColor = UIColor.clear
             imagePickerButton.isEnabled = false
             imagePickerButton.tintColor = UIColor.clear
+            logoAddButton.isEnabled = true
+            logoAddButton.tintColor = UIColor.init(red: 243/255, green: 225/255, blue: 0/255, alpha: 255/255)
         case .collageResult:
             editContentView = collageResultEditView
             //ホームボタンは表示
@@ -281,6 +299,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
             cameraButton.tintColor = UIColor.clear
             imagePickerButton.isEnabled = false
             imagePickerButton.tintColor = UIColor.clear
+            logoAddButton.isEnabled = true
+            logoAddButton.tintColor = UIColor.init(red: 243/255, green: 225/255, blue: 0/255, alpha: 255/255)
             //配列は空にする
             self.imageArray.removeAll()
         case .dof:
@@ -399,7 +419,7 @@ extension ViewController {
         // 要素を3つ取得するまで待ちます
         wait( { self.imageArray.count < 3 } ) {
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 // 0.2秒後に実行したい処理
                 if self.imageArray.count == 3 {
                     self.collageImageView5.image = self.imageArray[0]
@@ -1302,10 +1322,24 @@ extension ViewController {
         var img : UIImage
         
         if (appDelegate.stampArray.isEmpty == false) {
+//            //AutoLayout解除
+//            canvasView.translatesAutoresizingMaskIntoConstraints = true
+//            //CanvasViewの制約を変更
+//            canvasViewTopConstraint.constant = (resultImageView.frame.height - resultImageView.frame.width)/2
+//            canvasViewBottomConstraint.constant = (resultImageView.frame.height - resultImageView.frame.width)/2
+//            //canvasViewを再描画
+//            UIView.animate(withDuration: 0.5, animations: {
+//            self.view.layoutIfNeeded()
+//            })
+            print("ResultImageViewのサイズは\(resultImageView.frame)です")
+            print("CanvasViewのサイズは\(canvasView.frame)です")
             //画像コンテキストをサイズ、透過の有無、スケールを指定して作成
-            UIGraphicsBeginImageContextWithOptions(canvasView.bounds.size, canvasView.isOpaque, 0.0)
+            UIGraphicsBeginImageContextWithOptions(CGSize(width: canvasView.bounds.width, height: canvasView.bounds.width), canvasView.isOpaque, 0.0)
+            
             //canvasViewのレイヤーをレンダリング
-            canvasView.layer.render(in: UIGraphicsGetCurrentContext()!)
+            let context = UIGraphicsGetCurrentContext()!
+            context.translateBy(x: 0, y: -(canvasView.bounds.height - canvasView.bounds.width)/2)
+            canvasView.layer.render(in: context)
             //レンダリングした画像を取得
             img = UIGraphicsGetImageFromCurrentImageContext()!
             //画像コンテキストを破棄

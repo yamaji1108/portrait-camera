@@ -41,6 +41,7 @@ class ViewModel {
     var isHiddenCropImageView = false
     var isHiddenResultImageView = true
     var isHiddenGradientView = true
+    var isHiddenLogoDeleteButton = true
     var navigationTitle = ""
     var viewBackgroundColor = UIColor(named: "GGray")!
 
@@ -140,6 +141,7 @@ class ViewModel {
             isHiddenCollageBKImageView4 = true
             isHiddenCollageBKImageView5 = true
             isHiddenCropImageView = true
+            isHiddenLogoDeleteButton = false
             navigationTitle = ""
             viewBackgroundColor = UIColor(named: "GGray")!
             
@@ -159,6 +161,7 @@ class ViewModel {
             isHiddenCollageBKImageView3 = true
             isHiddenCollageBKImageView4 = true
             isHiddenCollageBKImageView5 = true
+            isHiddenLogoDeleteButton = false
             navigationTitle = ""
             viewBackgroundColor = UIColor(named: "GGray")!
 
